@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#click" prefHeight="51.0" prefWidth="230.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CategoryController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="51.0" prefWidth="230.0" spacing="15.0" styleClass="mouse-mouved" stylesheets="@../application/application.css">
+         <children>
+            <ImageView fx:id="cat_img_view" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/electronics-integrated-circuit.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="cat_txt_label" prefHeight="41.0" prefWidth="109.0" text="Electronics" />
+         </children>
+      </HBox>
+   </children>
+</HBox>

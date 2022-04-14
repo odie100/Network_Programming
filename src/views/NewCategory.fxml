@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="functions.ServerFunction">
+   <children>
+      <Pane prefHeight="29.0" prefWidth="400.0">
+         <children>
+            <ImageView fitHeight="29.0" fitWidth="33.0" layoutX="368.0" layoutY="1.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/exit_96px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label alignment="CENTER" prefHeight="42.0" prefWidth="400.0" styleClass="bold-shadow" stylesheets="@../application/application.css" text="Add new Category">
+         <font>
+            <Font name="Serif Bold" size="24.0" />
+         </font>
+      </Label>
+      <Pane prefWidth="400.0" stylesheets="@../application/application.css">
+         <children>
+            <ImageView fx:id="cat_img_view" fitHeight="95.0" fitWidth="146.0" layoutX="127.0" layoutY="4.0" onMouseClicked="#chooseImage" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/about_96px.png" />
+               </image></ImageView>
+         </children>
+      </Pane>
+      <Label fx:id="src_label" alignment="CENTER" contentDisplay="CENTER" prefHeight="16.0" prefWidth="402.0">
+         <VBox.margin>
+            <Insets left="5.0" right="5.0" />
+         </VBox.margin>
+      </Label>
+      <TextField fx:id="cat_name_field" styleClass="bold-white-shadow" stylesheets="@../application/application.css">
+         <VBox.margin>
+            <Insets left="5.0" right="5.0" top="20.0" />
+         </VBox.margin>
+      </TextField>
+      <Button mnemonicParsing="false" onMouseClicked="#addCategory" prefHeight="24.0" prefWidth="172.0" text="Add">
+         <VBox.margin>
+            <Insets left="120.0" top="25.0" />
+         </VBox.margin>
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/confirm_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+   <stylesheets>
+      <URL value="@../application/modena_dark.css" />
+      <URL value="@../application/application.css" />
+   </stylesheets>
+   <styleClass>
+      <String fx:value="bold-white-shadow" />
+      <String fx:value="fill-transparent" />
+   </styleClass>
+</VBox>

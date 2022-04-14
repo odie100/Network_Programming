@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="922.0" styleClass="transparent" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NotificationController">
+   <left>
+      <VBox prefHeight="600.0" prefWidth="271.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="table_user" onMouseClicked="#loadTableDetailsChoosenClient" prefHeight="599.0" prefWidth="239.0" styleClass="rounded" stylesheets="@../application/application.css">
+              <columns>
+                <TableColumn fx:id="tab_username" prefWidth="270.0" text="Username" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <TableView fx:id="table" prefHeight="600.0" prefWidth="644.0" styleClass="rounded" stylesheets="@../application/application.css">
+        <columns>
+          <TableColumn fx:id="tab_prod_name" prefWidth="136.0" text="Product Name" />
+            <TableColumn fx:id="tab_description" prefWidth="143.0" text="Description" />
+            <TableColumn fx:id="tab_price" prefWidth="143.0" text="Price" />
+            <TableColumn fx:id="tab_quantity" prefWidth="82.0" text="Quantity" />
+            <TableColumn fx:id="tab_total" prefWidth="204.0" text="Total" />
+        </columns>
+      </TableView>
+   </right>
+</BorderPane>

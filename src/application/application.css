@@ -1,0 +1,82 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.white-background{
+	-fx-background-color: #fff;
+}
+
+.transparent{
+	-fx-background-color: rgba(0,0,0,0);
+}
+
+.round-layout{
+	-fx-border-radius: 50;
+	-fx-border-color: #D7D7D7;
+	
+}
+
+.selected{
+	-fx-background-color: #F3F3F3;
+}
+
+.mouse-moved:hover{
+	-fx-background-color: #3399ff;
+}
+
+.menu-selected:hover{
+	-fx-background-color: #3399ff;
+}
+
+.mouse-clicked{
+	-fx-background-color: #E445D2;
+}
+
+.fill-transparent{
+	-fx-border-color: #3399ff;
+	-fx-border-width: 2;
+}
+
+.shadow{
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0), 10,0,0,10) ;
+}
+
+.bold-shadow{
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10.0, 0.0, 0.0, 10.0);   
+}
+
+.bold-white-shadow{
+	-fx-effect: dropshadow(three-pass-box, rgba(190,190,190,0.8), 10, 0, 5	, 6);   
+}
+
+.notification{
+	-fx-background-radius: 100;
+	-fx-background-color: green;
+	-fx-text-fill: white;
+}
+
+.rounded{
+	-fx-background-radius: 50;
+}
+
+.hyperlink{
+	-fx-text-fill: cyan;
+}
+
+.btn-delete{
+	-fx-background-radius: 10;
+}
+
+
+.btn-delete:hover{
+	-fx-background-radius: 20;
+	-fx-background-color: #D92812;
+} 
+
+
+.btn-update{
+	-fx-background-radius: 10;
+}
+
+.btn-update:hover{
+	-fx-background-radius: 10;
+	-fx-background-color: #3194D8;
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <right>
+      <VBox prefHeight="530.0" prefWidth="438.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets top="15.0" />
+         </padding>
+      </VBox>
+   </right>
+   <left>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="530.0" fitWidth="461.0" pickOnBounds="true" VBox.vgrow="ALWAYS">
+               <image>
+                  <Image url="@../assets/img.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

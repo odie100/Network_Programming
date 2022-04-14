@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="704.0" prefWidth="500.0" styleClass="fill-transparent" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NewProductController">
+   <children>
+      <Pane prefHeight="154.0" prefWidth="500.0">
+         <children>
+            <ImageView fx:id="prod_img_view" fitHeight="139.0" fitWidth="150.0" layoutX="182.0" layoutY="8.0" onMouseClicked="#chooseImage" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <Reflection bottomOpacity="0.42" fraction="0.83" topOffset="-10.0" topOpacity="0.0" />
+               </effect>
+               <image>
+                  <Image url="@../assets/confirm_96px.png" />
+               </image></ImageView>
+            <ImageView fitHeight="24.0" fitWidth="31.0" layoutX="456.0" layoutY="13.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/exit_96px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label fx:id="src_label" alignment="CENTER" prefHeight="16.0" prefWidth="500.0" text="img_src">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label prefHeight="20.0" prefWidth="504.0" text="Name">
+         <VBox.margin>
+            <Insets left="5.0" top="30.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <TextField fx:id="prod_name_field" prefHeight="30.0" prefWidth="500.0" styleClass="bold-white-shadow" stylesheets="@../application/application.css">
+         <VBox.margin>
+            <Insets left="5.0" right="5.0" />
+         </VBox.margin></TextField>
+      <Label fx:id="warning_name" prefHeight="20.0" prefWidth="504.0" textFill="#d73636">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="5.0" top="5.0" />
+         </VBox.margin>
+      </Label>
+      <Label prefHeight="20.0" prefWidth="504.0" text="Category">
+         <VBox.margin>
+            <Insets left="5.0" top="10.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <ComboBox fx:id="combo_category" prefHeight="24.0" prefWidth="224.0" promptText="--------Select Category-------">
+         <VBox.margin>
+            <Insets left="5.0" />
+         </VBox.margin></ComboBox>
+      <Label fx:id="warning_category" prefHeight="20.0" prefWidth="504.0" textFill="#d73636">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="5.0" top="5.0" />
+         </VBox.margin>
+      </Label>
+      <Label prefHeight="20.0" prefWidth="504.0" text="Quantity">
+         <VBox.margin>
+            <Insets left="5.0" top="10.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <TextField fx:id="prod_quantity_field" prefHeight="30.0" prefWidth="500.0" styleClass="bold-white-shadow" stylesheets="@../application/application.css">
+         <VBox.margin>
+            <Insets left="5.0" right="5.0" />
+         </VBox.margin></TextField>
+      <Label fx:id="warning_quantity" prefHeight="20.0" prefWidth="504.0" textFill="#d73636">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="5.0" top="5.0" />
+         </VBox.margin>
+      </Label>
+      <Label prefHeight="20.0" prefWidth="504.0" text="Price">
+         <VBox.margin>
+            <Insets left="5.0" top="10.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <HBox>
+         <children>
+            <TextField fx:id="prod_price_field" prefHeight="30.0" prefWidth="224.0" styleClass="bold-white-shadow" stylesheets="@../application/application.css">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin></TextField>
+            <Label prefHeight="29.0" prefWidth="131.0" text="Ariary">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <Label fx:id="warning_price" prefHeight="20.0" prefWidth="504.0" textFill="#d73636">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="5.0" top="5.0" />
+         </VBox.margin>
+      </Label>
+      <Label prefHeight="20.0" prefWidth="504.0" text="Description">
+         <VBox.margin>
+            <Insets left="5.0" top="10.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <TextArea fx:id="prod_description_field" prefHeight="89.0" prefWidth="500.0" styleClass="bold-white-shadow" stylesheets="@../application/application.css">
+         <VBox.margin>
+            <Insets left="5.0" right="5.0" />
+         </VBox.margin></TextArea>
+      <Pane>
+         <children>
+            <Button layoutX="137.0" mnemonicParsing="false" onMouseClicked="#addProduct" prefHeight="24.0" prefWidth="227.0" text="Add">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/confirm_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </Pane>
+   </children>
+   <stylesheets>
+      <URL value="@../application/modena_dark.css" />
+      <URL value="@../application/application.css" />
+   </stylesheets>
+</VBox>
